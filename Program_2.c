@@ -6,23 +6,23 @@
 int main()
 {
 	char str1[10], str2[10];
-	scanf("%s", str1);
-
-	//Write your code here
-
   int beg, end, count=0; 
 
-  while(str1[count] !='\0'){
+	scanf("%s", str1);
+	//Write your code here
+
+
+  while(str1[count] != '\0'){
     count++;
   }
   end = count - 1;
 
-  for(int beg=0; beg<count; beg++){
+  for(beg=0; beg < count; beg++){
     str2[beg] = str1[end];
     end--;
   }
 
-  str2[beg] == '\0';
+  str2[beg] = '\0';
 
   printf(" %s\n", str2);
 
